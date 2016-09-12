@@ -6,7 +6,7 @@ registerOption((siteSettings, opts) => {
 
 function brandStandardization (text) {
 	return text
-		.replace(/\b(crit ?cola)\b/ig, "<span class=\"brand-standardization\"><span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit Cola</span><span class=\"brand-standardization-append\"></span></span>");
+		.replace(/\b(crit ?cola)\b/ig, "<span class=\"brand-standardization\"><span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit&nbsp;Cola</span><span class=\"brand-standardization-append\"></span></span>");
 }
 
 export function setup(helper) {
