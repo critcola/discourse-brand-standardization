@@ -1,6 +1,6 @@
 # Brand Standardization for Discourse
 
-This plugin for Discourse, designed for Crit Cola's brand, stardardizes the appearance of brand names in posts, to use uniform spelling, punctuation, and character case, and to appear on a single line.
+This plugin for Discourse, designed for Crit Cola's brand, stardardizes the appearance of brand names in posts to use uniform spelling, punctuation, and character case, and to appear on a single line.
 
 ## Installation
 
