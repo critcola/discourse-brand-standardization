@@ -6,7 +6,7 @@ registerOption((siteSettings, opts) => {
 
 function brandStandardization (text) {
 	return text
-		.replace(/\b(disabledrenamefornow)\b/ig, "<span class=\"brand-standardization\"><span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit&nbsp;Cola</span><span class=\"brand-standardization-append\"></span></span>");
+		.replace(/\b(Crit ?(C|c)ola)\b/g, "<span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit&nbsp;Cola</span><span class=\"brand-standardization-append\"></span>");
 }
 
 export function setup(helper) {
@@ -21,7 +21,6 @@ export function setup(helper) {
 	});
 
 	helper.whiteList([
-		'span.brand-standardization',
 		'span.brand-standardization-prepend',
 		'span.brand-standardization-name',
 		'span.brand-standardization-append'
