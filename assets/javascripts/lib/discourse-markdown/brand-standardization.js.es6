@@ -6,7 +6,8 @@ registerOption((siteSettings, opts) => {
 
 function brandStandardization (text) {
 	return text
-		.replace(/\b(Crit ?(C|c)ola)\b/g, "<span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit&nbsp;Cola</span><span class=\"brand-standardization-append\"></span>");
+		.replace(/\b(cr(it|ti)\scoa?l+[ao])\b/ig, "<span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit&nbsp;Cola</span><span class=\"brand-standardization-append\"></span>")
+		.replace(/\b(Cr(it|ti)?[Cc]oa?l+[ao])\b/g, "<span class=\"brand-standardization-prepend\"></span><span class=\"brand-standardization-name\">Crit&nbsp;Cola</span><span class=\"brand-standardization-append\"></span>");
 }
 
 export function setup(helper) {
